@@ -1,0 +1,23 @@
+function main{
+
+    int one = 1;
+    int two = 2;
+    bool f = FALSE;
+    bool t = TRUE;
+
+    //Test that displays IF's statements uses
+    //Should print 1 3 5
+    if(one<two ){
+        println(1);
+        if(t){
+            println(3);
+            if(f AND t AND TRUE){
+                println(4);
+            }else{
+                println(5);
+            }
+        }
+    }else{
+        print(2);
+    }
+}

@@ -1,0 +1,23 @@
+function main{
+
+    //Test that displays a wrong assignation do to types not matching
+
+    tuple t0{
+        int a = 1111;
+    }
+    tuple t1{
+        int a = 321;
+        tuple t= t0;
+    }
+
+
+    tuple t2{
+        int a = 123;
+        bool b = FALSE OR TRUE;
+        tuple t = t1;
+    }
+
+    //Type of t2.t.t.a is integer
+    bool b = t2.t.t.a;
+
+}
